@@ -6,7 +6,7 @@ public class EmployeePayroll {
 	
 	int emp_id;
 	String name;
-	int dept_id;
+	Department department;
 	String gender;
 	Date start;
 	
@@ -26,14 +26,6 @@ public class EmployeePayroll {
 		this.name = name;
 	}
 
-	public int getDept_id() {
-		return dept_id;
-	}
-
-	public void setDept_id(int dept_id) {
-		this.dept_id = dept_id;
-	}
-
 	public String getGender() {
 		return gender;
 	}
@@ -45,9 +37,18 @@ public class EmployeePayroll {
 	public Date getStart() {
 		return start;
 	}
-
+	
 	public void setStart(Date start) {
 		this.start = start;
 	}
 
+	public Department getDepartment() {
+		return department;
+	}
+
+	public void setDepartment(Department department) {
+		this.department = department;
+	}
+
+	
 }
